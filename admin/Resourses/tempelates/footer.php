@@ -1,0 +1,14 @@
+
+
+
+
+    <div class="footer">
+    
+    </div>
+
+
+    <script src =" <?php echo  $js ?>jquery.js"></script>
+    <script src =" <?php echo  $js ?>bootstrap.min.js"></script>
+    <script src=" <?php  echo $js ?>end.js"></script>
+</body>
+</html>

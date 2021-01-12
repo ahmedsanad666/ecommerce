@@ -1,0 +1,14 @@
+
+// satrt login form 
+
+.login{
+    width: 500px;
+    margin: 200px auto;
+
+    [type = "text"],[type = "password"]{
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+// end login form 

@@ -1,0 +1,184 @@
+
+
+notes -- 
+
+=== leson[3] intro to analyze=> how to make a simple analysis 
+
+=> simple analysis {
+
+--- pages & features 
+
+-sittings
+-Dachboard 
+-statistics 
+-log 
+-useres 
+-comments 
+-
+
+
+
+}
+
+=== leson [4] => staructure of folders => search for how to organise ur php website folders
+[https://code.tutsplus.com/tutorials/organize-your-next-php-project-the-right-way--net-5873]
+
+
+
+
+
+=== leson [5] => include the main recuired files like in pages =>  [category , settings, itemes]
+
+-انشاء لوحة تحكم لاضافه المنتجات و الحاجات و المجحتاجات فى الموقع 
+-creating header and footer in admin/temperates 
+
+
+=== leson [6]
+
+-include bootstarp font awsome 
+-
+
+=== leson [7] 
+
+-creating init file to creating a shortcuts for ur roots 
+-
+
+===leson [8]
+
+-creating lang files
+
+=== leson [9] => creating the main database 
+
+-creating database => shop and creat user table (id,username,email,pass,fullName , GroupID,trustStatus,regstatus)
+{
+    GroupID-> default value=0 =>  to identify user permission   
+    trustStatus > default value = 0 => to identify seller rank + if default value =0 so he is normal or if he is 1 so he is trusted 
+regstatus -> default value 0 > user approval 
+}
+
+
+
+
+===leson [10] => connecting to database => craete connect file in admin;
+
+create some variables -> dsn,user , pass  ,dsn for database sourse name ;
+
+$dsn = 'mysql: host= localhost; dbname=name;'
+$user = 'root';
+$pass = '';
+
+try{
+$db = new PDO($dsn, $user,$pass); => حاول تتصل 
+
+echo 'ur connected';
+
+    
+}
+
+catch(PDOException $e){   لو متصلش 
+
+echo 'failed'  . $e->getMessage();
+}
+
+
+
+
+=====leson 11
+
+========leson 12
+
+sending login form data to the server
+
+in php course{
+    leson 79
+
+    in php if u want to (تشفر) data use sha1 $name;
+
+}
+
+in mysql course{
+
+    prepare 
+
+}
+
+== lesson 12 part to take login info 
+
+=== leson 14 making navbar file 
+-why i seperated nav from header > as i need to include header and footer in all pages not nav bar 
+-creat a simple fun to make php include navbar file in all page expect the one with $nonavbar 
+
+- translate navbar 
+
+=== leson  15 start to style dashboard and bootstarp 
+
+
+=== leson 15 start to style dashboard and bootstarp 
+
+=== leson 16 split page {
+    revesion to super global variables php => get & post 
+
+    - what is the main idea of this page=> if u have on file or one page like category page and u need to make many pages out of it like [category-> fasionPage or category-> mobiles or members-> edit or members-> delete ]
+    -so what can we do in this case ->>>>>> we just can make one page (category or members) => and we craete a empety variabele and use if statemant with get request method -> if this variable has for example " addd" as value so header the user to add page  and we fill out the connect of add page in the same file(category page ) as we will se ;
+
+    -
+}
+
+=== leson 18 creat the first function 
+
+
+
+=== leson 19 creat members page 
+
+
+===  leson 22 how to send ur new data in update page and update in in database
+
+-
+
+
+===leson 24  validation of the form from server using php , next we wel know how to make validation from client side using html5 or jquery
+
+
+=== 25     code update page complete validation process 
+
+- display errors in bootstarp alert 
+
+- to validation using html add attrebuet required = 'required'; in input 
+-
+
+
+==== leson 26  create add page by get request = do = add ..> and we can access it from maage page 
+
+
+- so we craete button in manage page to dedirect us to add paage 
+
+
+=== leson 27 insert new member in database
+
+
+
+=== leson 32 creat a function for erro directories >> ok u can user refresh: seconds ; header:url>>>>>> 
+
+
+
+=== leson 34 creat check item function for exmple to check if user name exist in database or not >>{
+
+- we well take the name we need to chexk out and assume that it exists in database 
+- select all date from database whare user name = chexked out name . if row count > 0 the this name exist in database and then we stor worinng message  in variable and diaplay it whereever we want 
+
+
+function check ($errorns, $item, ){
+
+    $stme = $con->prepare("select * from )
+}
+
+
+}
+
+
+=== updating the redirect function {
+
+    
+}
+
+

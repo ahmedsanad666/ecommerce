@@ -1,0 +1,19 @@
+
+// start bootsatarp edits 
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: #2f3640;
+    border-radius: 10px;
+    margin-top: 6px;
+
+  a{
+        color:#dcdde1;
+
+        &:hover{
+        background-color: rgb(29, 24, 24);
+        transition: 0.3s ease-in-out;
+        }
+    }
+   
+}
+// end  bootsatarp edits 

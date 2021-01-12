@@ -1,0 +1,23 @@
+// satrt global 
+// body{
+//     background-color: #2f2727;
+// }
+// end global  
+
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+font-weight: bold;
+    &:hover{
+        text-decoration-line: none;
+    }
+}
+
+.show_pass i{
+    position: absolute;
+    right: 3%;
+    bottom: 50%;
+    cursor: pointer;
+
+
+}
